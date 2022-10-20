@@ -6,6 +6,8 @@ class HtmlPageManip:
         pass
 
     def get_html_of_page(self, url_of_the_page) -> str:
+        htmltext = ""
+        
         try:
             url = requests.get(url_of_the_page)
             htmltext = url.text
